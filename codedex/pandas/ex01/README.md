@@ -13,3 +13,40 @@
 
 No fim das contas, o Pandas é o que nos capacita a ir além da tabela, transformando grandes volumes de dados em respostas claras e _insights_ valiosos.
 
+---
+# 📝 Exercício 01
+
+### Instruções:
+No ambiente de trabalho, importamos o pacote `pandas` e criamos um DataFrame chamado `movies`!
+Agora, digite o seguinte na célula de código na parte inferior da página:
+
+```python
+movies
+```
+
+E pressione `Shift` + `Enter para executar. Uma tabela deve ser exibida:
+
+Pronto! Agora estamos prontos para aprender como usar o Pandas para responder perguntas sobre esses dados.
+
+**Bônus:** Qual pergunta você faria sobre este conjunto de dados?
+
+Escreva-a como um **comentário em Python** e execute a célula novamente. Por exemplo:
+
+```python
+# Qual mês é o melhor (ou pior) para lançar um filme?
+# Qual estúdio de cinema tem o maior lucro médio?
+```
+
+### 💡 Dicas:
+* Para exibir o DataFrame, basta digitar o nome dele, `movies`, e pressionar `Shift` + `Enter`.
+* Não há necessidade de usar a função `print()`!
+* Uma tabela como esta deve aparecer:
+
+<div align="center">
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/fe4d3eab-f1a4-4a06-b2a1-e5cdb0f2ee2d" />
+</div>
+
+**Se você é novo no notebook Python:**
+* `Shift` + `Enter` executa a célula atual.
+* `Enter` simplesmente cria uma nova linha dentro da célula atual (sem executá-la).
+
