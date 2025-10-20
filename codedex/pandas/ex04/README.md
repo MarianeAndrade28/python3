@@ -1,4 +1,4 @@
-# Masmorras e Dragões I
+# ⚔️ Masmorras e Dragões I
 
 ### Acessando colunas específicas.
 Às vezes, não precisamos do DataFrame inteiro, pois queremos focar apenas em uma coluna (ou algumas).
@@ -45,4 +45,24 @@ removed_title_df = movies.drop("title", axis = 1)
 
 A linha de código acima cria um novo DataFrame denominado `removied_tittle_df` que contém todas as colunas de movies, exceto a coluna `title`.
 O argumento `axis = 1` é fundamental, pois ele instrui o Pandas a remover uma coluna (o eixo 1) em vez de uma linha (o eixo 0, que é o padrão).
+
+# 📝 Exercício 04
+
+### Instruções:
+Masmorras e Dragões é um RPG de mesa onde os jogadores criam personagens e embarcam em aventuras em um mundo de fantasia.
+
+Aqui, temos um DataFrame chamado characters que contém informações sobre 10 heróis de D&D. Vamos praticar as seleções individuais:
+* Selecione apenas a coluna name e armazene-a em uma variável chamada character_names. Em seguida, imprima o tipo desta variável. O que obtemos?
+* Selecione as colunas `name`, `level` e `hp` e armazene-as em uma variável chamada `basic_stats`.
+* Selecione todas as colunas, exceto **alignment**, e armazene isso em uma variável chamada `removed_alignment`.
+
+### 💡 Dica:
+* Para selecionar uma única coluna e armazená-la em uma nova variável, use a sintaxe:
+
+```python
+new_variable = df_name['column_name']
+```
+
+* Para selecionar várias colunas, use a sintaxe acima, mas substitua `'column_name'` por uma **lista** de nomes de colunas (ou seja, use colchetes duplos `[[]]`).
+* Para selecionar todas as colunas, exceto uma, use o método **`.drop()`**. Certifique-se de incluir o argumento **`axis=1`**.
 
