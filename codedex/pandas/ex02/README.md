@@ -77,3 +77,43 @@ df = pd.read_csv('my_filename.tsv', delimiter='\t')
 
 Aqui, `delimiter='\t'` diz ao Python que os valores no **meu_nome do arquivo.tsv** os arquivos são separados por tabulações em vez de vírgulas.
 
+# 📝 Exercício 02
+
+### Instruções:
+Primeiro, importe `pandas` no topo do arquivo. Em seguida, crie um `DataFrame` chamado `contacts` contendo informações sobre seus amigos, familiares ou personagens fictícios. É necessário que ele tenha pelo menos 3 colunas e 4 linhas.
+
+Sinta-se à vontade para ser criativo sobre quais colunas incluir. Se precisar de inspiração, considere colunas como: `name`, `age`, `phone_number`, `astrological_sign`.
+
+**Exemplo:**
+| nome | idade | telefone | signo |
+| --- | --- | --- | --- |
+| Bart | 10 | 939-555-0113 | Touro |
+| Lisa | 8 | 939-555-0114 | Virgem |
+| Homer | 39 | 939-555-0115 | Touro |
+| Marge | 36 | 939-555-0116 | Peixes |
+
+
+Crie o DataFrame usando o método dicionário ou o método lista. Por fim, não se esqueça de exibir a tabela depois de criá-la!
+
+### 💡 Dica:
+Comece importando primeiro `pandas`:
+```python
+import pandas as pd
+```
+
+Aqui está um código modelo para você iniciar a construção do seu DataFrame:
+```python
+data = {
+  'name': ['Bart', 'Lisa', 'Homer', 'Marge'],
+  'age': [10, 8, 39, 36],
+  'phone_number': ['', '', '', ''],
+  'astrological_sign': ['', '', '', '']
+}
+
+contacts = pd.DataFrame(data)
+```
+
+Exiba com um simples:
+```python
+contacts
+```
