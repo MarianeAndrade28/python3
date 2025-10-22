@@ -1,4 +1,4 @@
-# Masmorras e Dragões II
+# ⚔️ Dungeons & Dragons II
 
 ### Filtrando Linhas.
 Já aprendemos como selecionar colunas específicas, mas e se quisermos apenas certas linhas? Aqui está o nosso movies DataFrame mais uma vez:
