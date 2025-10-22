@@ -1,4 +1,4 @@
-# ⚔️ Masmorras e Dragões I
+# ⚔️ Dungeons & Dragons I
 
 ### Acessando colunas específicas.
 Às vezes, não precisamos do DataFrame inteiro, pois queremos focar apenas em uma coluna (ou algumas).
