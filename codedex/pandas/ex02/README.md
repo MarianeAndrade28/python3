@@ -77,6 +77,7 @@ df = pd.read_csv('my_filename.tsv', delimiter='\t')
 
 Aqui, `delimiter='\t'` diz ao Python que os valores no **meu_nome do arquivo.tsv** os arquivos são separados por tabulações em vez de vírgulas.
 
+---
 # 📝 Exercício 02
 
 ### Instruções:
@@ -117,3 +118,4 @@ Exiba com um simples:
 ```python
 contacts
 ```
+
