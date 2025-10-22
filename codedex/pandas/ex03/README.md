@@ -24,7 +24,7 @@ df.head(10)   # Exibe as primeiras 10 linhas
 O método `.info()` irá mostrar informações sobre colunas específicas. Imagine que tenhamos o seguinte DataFrame nomeado `movies`:
 
 <div align="center">
-  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/3347efc3-bffa-4ebb-a726-eb5e7fb56a6b" />
+  <img width="800" alt="image" src="https://github.com/user-attachments/assets/3347efc3-bffa-4ebb-a726-eb5e7fb56a6b" />
 </div>
 
 Observe como temos `NaN` (não é um número) valores em algumas linhas. Isso é comum, pois conjuntos de dados do mundo real geralmente apresentam dados ausentes ou incompletos.
@@ -65,7 +65,7 @@ movies.describe()
 ```
 
 <div align="center">
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/eecf7df2-3b90-4404-8e40-81e514a1415f" />
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/eecf7df2-3b90-4404-8e40-81e514a1415f" />
 </div>
 
 
@@ -74,6 +74,23 @@ Isso mostra que o orçamento médio dos nossos filmes é `7.3250000e+07`, ou 73.
 No entanto, adicionar o parâmetro `include='all'` nos permite visualizar estatísticas sobre colunas não numéricas:
 
 <div align="center">
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/e0feda9f-e5f5-49ec-9ee3-5c884a719361" />
+  <img width="580" alt="image" src="https://github.com/user-attachments/assets/e0feda9f-e5f5-49ec-9ee3-5c884a719361" />
 </div>
+
+---
+# 📝 Exercício 03
+
+### Instruções:
+Nos dias atuais todo mundo está constantemente no celular.
+
+Vamos criar um DataFrame chamado apps, contendo dados (fictícios) sobre aplicativos populares:
+* Chame a função `.head()` ou `.tail()` para ver apenas o início ou o fim do DataFrame;
+* Chame a função `.info()` e observe se há algum valor ausente;
+* Chame a função `.describe()` e observe o número médio de downloads.
+
+### 💡 Dica:
+* Ao ligar `apps.head()` / `apps.tail()`, não há necessidade de usar `print()`;
+* `apps.info()` mostrará que existem 9 linhas no DataFrame. Duas colunas têm 8 valores não nulos, portanto, cada uma dessas colunas não possui um valor;
+* `apps.describe()` vai mostrar-lhe o `mean` valor para `downloads_millions` é 1450 milhões.
+
 
