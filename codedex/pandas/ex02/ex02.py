@@ -1,10 +1,11 @@
 import pandas as pd
 
 data = {
-  'nome': ['Bart', 'Lisa', 'Homer', 'Marge'],
-  'idade': [10, 8, 39, 36],
-  'numero_telefone': ['939-555-0113', '939-555-0114', '939-555-0115', '939-555-0116'],
-  'signo': ['Touro', 'Virgem', 'Touro', 'Peixes']
+  'personagem': ['Drácula', 'Martha', 'Mavis', 'Jonathan'],
+  'espécie': ['Vampiro', 'Vampiro', 'Vampiro', 'Humano'],
+  'telefone': ['939-555-0113', '939-555-0114', '939-555-0115', '939-555-0116'],
+  'original': ['Adam Sandler', 'Jackie Sandler', 'Selena Gomes', 'Andy Samberg'],
+  'dublador': ['Alexandre Moreno', 'Flávia Saddy', 'Fernanda Baronne', ' Mckeidy Lisita']
 }
 
 contatos = pd.DataFrame(data)
