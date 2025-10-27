@@ -15,7 +15,7 @@ df.head()     # Exibe as primeiras 5 linhas
 df.tail()     # Exibe as últimas 5 linhas
 ```
 
-Se quisermos mais de 5 linhas, podemos passar um número específico. Por exemplo, isso exibirá o primeiro 10 linhas:
+Se quisermos mais de 5 linhas, podemos passar um número específico. Por exemplo, isso exibirá as primeiras 10 linhas:
 ```python
 df.head(10)   # Exibe as primeiras 10 linhas
 ```
@@ -27,8 +27,8 @@ O método `.info()` irá mostrar informações sobre colunas específicas. Imagi
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/3347efc3-bffa-4ebb-a726-eb5e7fb56a6b" />
 </div>
 
-Observe como temos `NaN` (não é um número) valores em algumas linhas. Isso é comum, pois conjuntos de dados do mundo real geralmente apresentam dados ausentes ou incompletos.
-Se chamarmos `movies.info()`, nós obteremos à seguinte saída:
+Observe como temos valores `NaN` (não é um número) em algumas linhas. Isso é comum, pois conjuntos de dados do mundo real geralmente apresentam dados ausentes ou incompletos.
+Se chamarmos `movies.info()`, teremos à seguinte saída:
 
 ```python
 <class 'pandas.core.frame.DataFrame'>
@@ -48,7 +48,7 @@ dtypes: float64(3), int64(1), object(4)
 memory usage: 312.0+ bytes
 ```
 
-**Existem algumas informações notáveis neste resultado:**
+**Existem algumas informações importantes neste resultado:**
 * `5 entries` significa que existem 5 linhas no conjunto de dados;
 * As colunas `budget` e `box_office` possuem 1 valor ausente (apenas 4  valores não nulos);
 * O `Dtype` descreve o tipo de dados de cada coluna;
@@ -69,7 +69,7 @@ movies.describe()
 </div>
 
 
-Isso mostra que o orçamento médio dos nossos filmes é `7.3250000e+07`, ou 73.250.000. O método `.describe()` calcule apenas estatísticas resumidas para colunas numéricas, pois muitas dessas estatísticas não fariam sentido para _strings_.
+Isso mostra que o orçamento médio dos nossos filmes é `7.3250000e+07`, ou 73.250.000. O método `.describe()` calcula apenas estatísticas resumidas para colunas numéricas, pois muitas dessas estatísticas não fariam sentido para _strings_.
 
 No entanto, adicionar o parâmetro `include='all'` nos permite visualizar estatísticas sobre colunas não numéricas:
 
