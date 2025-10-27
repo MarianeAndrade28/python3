@@ -3,10 +3,10 @@
 ### Exploração de Dados.
 O Pandas é ótimo para trabalhar com conjuntos de dados com milhares de linhas. No entanto, ao olharmos para uma tabela enorme (ou um DataFrame grande), pode ser difícil saber por onde começar.
 
-Aqui estão quatro `pandas` métodos que podem ajudar em alguma exploração básica de dados:
+Aqui estão quatro métodos `pandas` que podem ajudar em alguma exploração básica de dados:
 `.head()`, `.tail()`, `.info()` e `.describe()`
 
-### Exibir linhas com .head() e .tail().
+### Exibir linhas com `.head()` e `.tail()`.
 Se o conjunto de dados for muito grande, imprimir tudo resultaria em excesso de informações na tela. É aqui que `.head()`e `.tail()`entram. Esses métodos exibem as **primeiras** e às **últimas 5 linhas** (por padrão) do DataFrame, respectivamente.
 
 Imagine que tenhamos um DataFrame chamado `df`:
@@ -20,7 +20,7 @@ Se quisermos mais de 5 linhas, podemos passar um número específico. Por exempl
 df.head(10)   # Exibe as primeiras 10 linhas
 ```
 
-### Tipos de Dados e Valores Ausentes com .info().
+### Tipos de Dados e Valores Ausentes com `.info()`.
 O método `.info()` irá mostrar informações sobre colunas específicas. Imagine que tenhamos o seguinte DataFrame nomeado `movies`:
 
 <div align="center">
