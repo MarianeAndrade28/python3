@@ -1,7 +1,7 @@
 # ⚔️ Dungeons & Dragons II
 
 ### Filtrando Linhas.
-Já aprendemos como selecionar colunas específicas, mas e se quisermos apenas certas linhas? Aqui está o nosso movies DataFrame mais uma vez:
+Já aprendemos como selecionar colunas específicas, mas e se quisermos apenas certas linhas? Aqui está o nosso `movies` DataFrame mais uma vez:
 
 <div align="center">
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/a303ae6b-a0dd-4e87-a83f-40520e403354"/>
@@ -22,11 +22,11 @@ Essa sintaxe de filtragem pode ser um pouco confusa. Por que precisamos incluir 
 Vamos decompô-lo observando a parte do código que está dentro do conjunto externo de colchetes: A linha `movies['runtime_minutes'] > 120` cria uma série de valores `True` e `False`, um para cada linha:
 
 <div align="center">
-  <img width="464" height="188" alt="image" src="https://github.com/user-attachments/assets/5157795c-22a9-40c7-b523-f18545aa84e5" />
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/5157795c-22a9-40c7-b523-f18545aa84e5" />
 </div>
 
-Isso mostrará que em nosso movies DataFrame, todos os filmes, exceto o 4º filme (O Rei Leão) têm mais de 120 minutos.
-Mas isso ainda não foi filtrado. Queremos remover as linhas com valor False. Para filtrar o DataFrame, usamos essa série booleana entre colchetes. Isso mantém apenas as linhas onde a condição está True.
+Isso mostrará que em nosso `movies` DataFrame, todos os filmes, exceto o 4º filme (O Rei Leão) têm mais de 120 minutos.
+Mas isso ainda não foi filtrado. Queremos remover as linhas com valor `False`. Para filtrar o DataFrame, usamos essa série booleana entre colchetes. Isso mantém apenas as linhas onde a condição está `True`.
 
 Aqui está outra maneira de fazer essa filtragem, onde dividimos o processo em duas etapas:
 
@@ -45,7 +45,7 @@ long_movies = movies[
 ]
 ```
 
-É importante se certificar de envolver cada série booleana individual entre parênteses. Se quiser usar OR ao invés de AND, basta alterar `&` para `|`.
+É importante se certificar de envolver cada série booleana individual entre parênteses `()`. Se quiser usar OR ao invés de AND, basta alterar `&` para `|`.
 Podemos encadear quantas expressões desejarmos!
 
 ---
@@ -54,11 +54,11 @@ Podemos encadear quantas expressões desejarmos!
 ### Instruções:
 Considere o DataFrame `characters`, que contém dados de vários heróis de **Dungeons & Dragons** (D&D). Usando técnicas de filtragem do Pandas, crie os três novos DataFrames solicitados abaixo:
 1. `high_level`:
-  * Deve incluir apenas os personagens cujo nível (`level`) seja estritamente maior que 5;
+    * Deve incluir apenas os personagens cujo nível (`level`) seja estritamente maior que 5;
 3. `halfling_bards`:
-  * Deve incluir apenas os personagens cuja raça (`race`) seja `'Halfling'` AND a classe (`class`) seja `'Bard'`;
+    * Deve incluir apenas os personagens cuja raça (`race`) seja `'Halfling'` AND a classe (`class`) seja `'Bard'`;
 4. `magic_users`:
-  * Deve incluir todos os personagens cuja classe (class) seja `'Wizard'` OR `'Sorcerer'` OR `'Warlock'`.
+    * Deve incluir todos os personagens cuja classe (class) seja `'Wizard'` OR `'Sorcerer'` OR `'Warlock'`.
 
 Após criar cada DataFrame, exiba-o para confirmar se a filtragem foi aplicada corretamente.
 
