@@ -1,3 +1,5 @@
+# Exercício Módulo 7 - If
+
 categoria = input('Categoria: ').lower()
 produto = input('Nome do Produto: ').upper()
 quantidade = input('Quantidade atual do produto: ')

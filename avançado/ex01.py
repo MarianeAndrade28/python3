@@ -1,4 +1,4 @@
-# Exercício Módulo 1 - Operações, Variáveis e Input.
+# Exercício Módulo 5 - Operações, Variáveis e Input.
 
 print("-"*30)
 cod = input('Digite o código: ').upper()
