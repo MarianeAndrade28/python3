@@ -3,6 +3,8 @@
 ### Manipulações Avançadas de Dados
 Agora que exploramos e filtramos nossos dados, vamos subir de nível. Iremos aprender a classificar, renomear colunas e até a adicionar novas.
 
+<br>
+
 #### 1 - Classificação por Colunas com `.sort_values()`
 Vamos ver qual filme rendeu mais dinheiro? Para isso, podemos classificar um DataFrame por uma coluna específica usando `.sort_values()`:
 
@@ -17,6 +19,8 @@ O novo `box_office_sorted` DataFrame terá linhas ordenadas pelo valor de sua co
 
 Para classificar de baixo para cima (ordem crescente), basta utilizar `ascending = True`.
 
+<br>
+
 #### 2 - Renomear Colunas com `.rename()`
 Digamos que queremos renomear a coluna `'budget'` para `'budget_usd'`. Podemos fazer isso usando `.rename()`:
 
@@ -30,6 +34,8 @@ movies = movies.rename(columns={'budget': 'budget_usd'})
 Observe que utilizamos `movies =` . Isso acontece pois, o método `.rename()` não modifica o DataFrame original por padrão, a menos que atribuamos o resultado de volta a `movies` (ou usemos o parâmetro `inplace=True`).
 
 Se quiséssemos renomear várias colunas de uma só vez, poderíamos ter passado pares adicionais de chave:valor para o dicionário `columns`.
+
+<br>
 
 ### Adicionando colunas
 Podemos adicionar novas colunas atribuindo uma lista ou um cálculo ao nome de uma coluna. Vejamos como adicionar a coluna `'lead_actor'`.
@@ -66,9 +72,9 @@ Carregamos dados sobre aplicativos populares em um DataFrame chamado `apps`.
 * Classifique os aplicativos por `rating`, de modo que os aplicativos com melhor classificação estejam no topo do DataFrame;
 * Altere o nome da coluna `app_name` para `name`.
 
+<br>
+
 ###  💡 Dica:
 * Para criar uma nova coluna, defina `apps['downloaded']` igual a uma **lista de 10 itens**;
 * Usar `apps.sort_values()` para classificar o DataFrame por `rating`. Certifique-se de incluir `ascending = False`;
 * Para renomear uma coluna, use `apps.rename()` e passe o dicionário `columns={'app_name':'name'}`.
-
-
