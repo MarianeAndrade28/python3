@@ -14,12 +14,16 @@ import pandas
 
 Com a importação concluída, podemos então iniciar a criação de `DataFrames`. Para o nosso exemplo de cidades, há algumas abordagens possíveis.
 
+<br>
+
 | CIDADE | PAÍS | POPULAÇÃO |
 | :--- | :--- | :--- |
 | Brooklyn | EUA | 2646000 |
 | Seul | Coreia do Sul | 9411000 |
 | Barcelona | Espanha | 1636000 |
 | Cidade do México | México | 9209944 |
+
+<br>
 
 ### Criando à partir de um Dicionário.
 Esta é a forma mais popular de construir um DataFrame do zero:
@@ -40,6 +44,8 @@ Cada chave no `data` dicionário (`city`, `country`, `population`) torna-se uma 
 
 Uma vez criado o dicionário, podemos passar o dicionário para `pd.DataFrame()` para criar o DataFrame. Aqui, nós o armazenamos em uma variável chamada `df`, abreviação de DataFrame.
 
+<br>
+
 ### Criando à partir de uma Lista de Listas.
 Às vezes é mais fácil pensar em fileiras. Podemos fazer isso assim com uma lista 2D.
 
@@ -56,6 +62,8 @@ df = pd.DataFrame(data, columns=['city', 'country', 'population'])
 
 Aqui, cada lista interna é uma linha. Não se esqueça de nomear nossas colunas como o `columns` parâmetro!
 
+<br>
+
 ### Importando de um Arquivo CSV.
 Imagine que temos um .csv arquivo (valores separados por vírgulas) em nosso computador, e que queremos trazer para Python. Podemos carregá-lo no Pandas em uma linha com `.read_csv()`:
 
@@ -66,6 +74,8 @@ df = pd.read_csv('my_filename.csv')
 Substituir `my_filename.csv` com nome de arquivo. Se estiver na mesma pasta do código, tudo certo.
 
 Vamos usar este método com mais frequência ao trabalhar com dados do mundo real.
+
+<br>
 
 ### Bônus: Importando de outros tipos de Arquivo.
 Às vezes, os dados chegam .tsv Formato (valores separados por tabulação) em vez de .csv. Para explicar isso, precisamos adicionar um ``delimiter`` parâmetro:
@@ -85,6 +95,8 @@ Primeiro, importe `pandas` no topo do arquivo. Em seguida, crie um `DataFrame` c
 
 Sinta-se à vontade para ser criativo sobre quais colunas incluir. Se precisar de inspiração, considere colunas como: `name`, `age`, `phone_number`, `astrological_sign`.
 
+<br>
+
 **Exemplo:**
 | nome | idade | telefone | signo |
 | --- | --- | --- | --- |
@@ -95,6 +107,8 @@ Sinta-se à vontade para ser criativo sobre quais colunas incluir. Se precisar d
 
 
 Crie o DataFrame usando o método dicionário ou o método lista. Por fim, não se esqueça de exibir a tabela depois de criá-la!
+
+<br>
 
 ### 💡 Dica:
 Comece importando primeiro `pandas`:
@@ -118,4 +132,5 @@ Exiba com um simples:
 ```python
 contacts
 ```
+
 
