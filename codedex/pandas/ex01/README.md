@@ -45,8 +45,10 @@ Escreva-a como um **comentário em Python** e execute a célula novamente. Por e
 <div align="center">
   <img width="600" alt="image" src="https://github.com/user-attachments/assets/fe4d3eab-f1a4-4a06-b2a1-e5cdb0f2ee2d" />
 </div>
+<br>
 
 **Se você é novo no notebook Python:**
 * `Shift` + `Enter` executa a célula atual.
 * `Enter` simplesmente cria uma nova linha dentro da célula atual (sem executá-la).
+
 
