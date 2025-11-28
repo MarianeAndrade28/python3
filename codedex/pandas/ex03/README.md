@@ -6,6 +6,8 @@ O Pandas é ótimo para trabalhar com conjuntos de dados que contêm muitas linh
 Aqui estão quatro métodos do `Pandas` que podem ajudar na exploração básica de dados:
 `.head()`, `.tail()`, `.info()` e `.describe()`
 
+<br>
+
 ### Exibir linhas com `.head()` e `.tail()`.
 Se o conjunto de dados for muito grande, imprimir tudo resultará em excesso de informações na tela. É aqui que `.head()`e `.tail()`entram. Esses métodos exibem as **primeiras e as últimas 5 linhas** (por padrão) do DataFrame, respectivamente.
 
@@ -20,12 +22,16 @@ Se quisermos mais de 5 linhas, podemos passar um número específico. Por exempl
 df.head(10)   # Exibe as primeiras 10 linhas
 ```
 
+<br>
+
 ### Tipos de Dados e Valores Ausentes com `.info()`.
 O método `.info()` irá mostrar informações sobre colunas específicas. Imagine que tenhamos o seguinte DataFrame nomeado `movies`:
 
 <div align="center">
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/3347efc3-bffa-4ebb-a726-eb5e7fb56a6b" />
 </div>
+
+<br>
 
 Observe como temos valores `NaN` (não é um número) em algumas linhas. Isso é comum, pois conjuntos de dados do mundo real geralmente apresentam dados ausentes ou incompletos.
 Se chamarmos `movies.info()`, teremos a seguinte saída:
@@ -48,6 +54,8 @@ dtypes: float64(3), int64(1), object(4)
 memory usage: 312.0+ bytes
 ```
 
+<br>
+
 **Existem algumas informações importantes neste resultado:**
 * `5 entries` significa que existem 5 linhas no conjunto de dados;
 * As colunas `budget` e `box_office` possuem 1 valor ausente (apenas 4  valores não nulos);
@@ -56,6 +64,8 @@ memory usage: 312.0+ bytes
   * As colunas que armazenam _strings_ são representadas por `object`. Se as colunas armazenassem outros tipos de dados complexos, como dicionários, datas ou objetos definidos pelo usuário, elas também apareceriam como `object`.
 
 Em suma, o método `.info()` pode ser usado para obter uma compreensão rápida dos tipos de dados armazenados no seu DataFrame, bem como **quantos dados estão ausentes**.
+
+<br>
 
 ### Estatísticas Resumidas com `.describe()`.
 Imagine que queremos encontrar o orçamento médio dos filmes no seu DataFrame. Você pode usar o método `.describe()` para obter um resumo de estatísticas (média, mínimo, máximo, desvio padrão, etc) para cada coluna numérica:
@@ -68,6 +78,7 @@ movies.describe()
   <img width="400" alt="image" src="https://github.com/user-attachments/assets/eecf7df2-3b90-4404-8e40-81e514a1415f" />
 </div>
 
+<br>
 
 Isso mostra que o orçamento médio dos nossos filmes é `7.3250000e+07`, ou 73.250.000. O método `.describe()` calcula apenas estatísticas resumidas para colunas numéricas, pois muitas dessas estatísticas não fariam sentido para _strings_ (ou texto).
 
@@ -88,9 +99,9 @@ Vamos criar um DataFrame chamado apps, contendo dados (fictícios) sobre aplicat
 * Chame a função `.info()` e observe se há algum valor ausente;
 * Chame a função `.describe()` e observe o número médio de downloads.
 
+<br>
+
 ### 💡 Dica:
 * Ao chamar `apps.head()` / `apps.tail()`, não há necessidade de usar `print()`;
 * `apps.info()` mostrará que existem 9 linhas no DataFrame. Duas colunas têm 8 valores não nulos, portanto, cada uma dessas colunas não possui um valor;
 * `apps.describe()` nos mostrará que o valor médio (`mean`) para `downloads_millions` é 1.450 milhões.
-
-

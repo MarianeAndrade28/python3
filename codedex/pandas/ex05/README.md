@@ -7,16 +7,22 @@ Já aprendemos como selecionar colunas específicas, mas e se quisermos apenas c
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/a303ae6b-a0dd-4e87-a83f-40520e403354"/>
 </div>
 
+<br>
+
 Vejamos como podemos filtrar filmes com mais de 120 minutos:
 
 ```python
 long_movies = movies[movies['runtime_minutes'] > 120]
 ```
 
+<br>
+
 Agora `long_movies` contém apenas os filmes extralongos.
 <div align="center">
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/996e75c7-b2a7-4d3f-ad0e-b85ae92d737f" />
 </div>
+
+<br>
 
 Essa sintaxe de filtragem pode ser um pouco confusa. Por que precisamos incluir `movies` duas vezes?
 Vamos decompô-lo observando a parte do código que está dentro do conjunto externo de colchetes: A linha `movies['runtime_minutes'] > 120` cria uma série de valores `True` e `False`, um para cada linha:
@@ -28,12 +34,16 @@ Vamos decompô-lo observando a parte do código que está dentro do conjunto ext
 Isso mostrará que em nosso `movies` DataFrame, todos os filmes, exceto o 4º filme (O Rei Leão) têm mais de 120 minutos.
 Mas isso ainda não foi filtrado. Queremos remover as linhas com valor `False`. Para filtrar o DataFrame, usamos essa série booleana entre colchetes. Isso mantém apenas as linhas onde a condição está `True`.
 
+<br>
+
 Aqui está outra maneira de fazer essa filtragem, onde dividimos o processo em duas etapas:
 
 ```python
 boolean_series = movies['runtime_minutes'] > 120
 long_movies = movies[boolean_series]
 ```
+
+<br>
 
 ### AND e OR
 Podemos filtrar com base em várias condições usando AND e OR. Ou seja, se quisermos filtrar filmes com mais de 120 minutos AND do gênero `'Sci-Fi'`, devemos usar o seguinte código:
@@ -61,6 +71,8 @@ Considere o DataFrame `characters`, que contém dados de vários heróis de **Du
     * Deve incluir todos os personagens cuja classe (class) seja `'Wizard'` OR `'Sorcerer'` OR `'Warlock'`.
 
 Após criar cada DataFrame, exiba-o para confirmar se a filtragem foi aplicada corretamente.
+
+<br>
 
 ### 💡 Dica:
 * Para os personagens `high_level`, sua declaração booleana deve ser `characters["level"] > 5`;
