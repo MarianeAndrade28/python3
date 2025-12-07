@@ -39,7 +39,7 @@ Se você está tendo problemas para pensar em tópicos, aqui estão algumas idei
 **Nota:** Se precisar de ajuda para criar seu conjunto de dados, sinta-se à vontade para usar **ChatGPT** ou outra ferramenta de IA para começar (ou para gerar um ponto de partida). Descobrimos que o seguinte prompt ajudou a criar um bom DataFrame inicial:
 ```Dê-me um código para criar um DataFrame sobre [seu tópico] com mais de 10 linhas e mais de 5 colunas. Algumas das colunas devem ser sobre [X, Y, Z].```
 
-**Dica:**
+**💡 Dica:**
 * Usando o prompt acima, conseguimos criar um enorme **DataFrame** de Pokémon fictícios!
 * Criamos então uma nova coluna que define o `power_score` com base no `attack`, `sp_atk` e `speed` de cada Pokémon;
 * Em seguida, classificamos o DataFrame por este novo `power_score`;
