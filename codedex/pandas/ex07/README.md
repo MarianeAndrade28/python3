@@ -6,6 +6,8 @@ Você chegou ao final do primeiro capítulo sobre Pandas e DataFrames! Belo trab
 Vamos recapitular as principais conclusões deste capítulo:
 DataFrames armazenam dados em linhas e colunas. Eles podem ser criados a partir de dicionários, listas ou importados diretamente de arquivos.
 
+<br>
+
 **Algumas explorações preliminares de dados:**
 * `.head()` mostra as primeiras linhas do DataFrame;
 * `.tail()` mostra as últimas linhas do DataFrame;
@@ -16,6 +18,7 @@ DataFrames armazenam dados em linhas e colunas. Eles podem ser criados a partir 
 * Podemos **classificar**, **renomear** e **adicionar** novas colunas a um **DataFrame**.
 
 **Vamos juntar tudo isso com um exercício final.**
+
 <br>
 
 ---
