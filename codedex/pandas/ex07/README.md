@@ -1,9 +1,9 @@
 # 📖 Revisão
 
 ### Parabéns!
-Você chegou ao final do primeiro capítulo sobre Pandas e DataFrames! Belo trabalho!
+Você chegou ao final do primeiro capítulo sobre Pandas e DataFrames!
 
-Vamos recapitular as principais conclusões deste capítulo:
+**Vamos relembrar as principais conclusões deste capítulo:**
 DataFrames armazenam dados em linhas e colunas. Eles podem ser criados a partir de dicionários, listas ou importados diretamente de arquivos.
 
 <br>
