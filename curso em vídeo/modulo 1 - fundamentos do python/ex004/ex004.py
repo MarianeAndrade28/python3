@@ -1,5 +1,3 @@
-# Desafio 004: Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ela.
-
 leia = input("Digite algo: ")
 print("O tipo primitivo desse valor é:", type(leia))
 print("Só tem espaços?", leia.isspace())
